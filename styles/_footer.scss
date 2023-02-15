@@ -5,6 +5,7 @@
    &__logo{
       display: flex;
       align-items: center;
+      gap: 15px;
    }
    &__imglogo{
       fill: $primaryColor;
@@ -45,7 +46,13 @@
       gap: 20px;
    }
    &__explore--list{
-      @extend %footerp;
+      :hover{
+         color: $primaryColor
+      }
+      a{
+         @extend %footerp;
+         text-decoration: none;
+      }
    }
    &__join{
       margin-top: 30px;
@@ -126,8 +133,43 @@
          height: 60px;
          padding: 19px 50px 19px 50px;
          position: absolute;
-         right: 0;
+         right: -1%;
+      }  
+   }
+   @media screen and (min-width:1280px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &__wrapper{
+         width: 327px;
       }
-      
+      &__explore{
+         margin: 0;
+         width: 240px;
+      }
+      &__join{
+         margin: 0;
+         p{
+            margin-top: 25px;
+         }
+      }
+      &__description{
+         width: 100%; 
+      }
+      &__explore--menu{
+         margin-top: 25px;
+      }
+      &__social{
+         margin-top: 30px;
+      }
+      &__item{
+         :hover{
+            fill: $primaryColor;
+         }
+      }
+      &__button:active{  
+         background-color:  #3B3B3B;
+         color: $primaryColor;
+      }
    }
 }
