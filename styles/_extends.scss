@@ -1,0 +1,10 @@
+@use "variables";
+
+// border
+%seaborder{
+   border: 2px solid $primaryColor;
+}
+
+%emailborder{
+   border: 1px solid $fontSubColor;
+}
