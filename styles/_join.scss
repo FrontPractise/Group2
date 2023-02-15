@@ -1,0 +1,132 @@
+@use "variables";
+.join-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__holder {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 30px;
+    .join-section__image {
+      height: 255px;
+      background: url("../images/mobile/spaceMobile.jpg") center / 100% 100% no-repeat;
+      border-radius: 22px;
+    }
+    .join-section__info{
+      &--title {
+        @extend %jointitle;
+        font-family: $fontMainTitle;
+        margin-bottom: 10px;
+      }
+      &--text {
+        @extend %joinp;
+        font-family: $fontMain;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__input{
+    input{
+      width: 100%;
+      border-radius: $defaultRadius;
+      padding: 12px 20px;
+      @extend %emailborder;
+    }
+  }
+  &__button{
+    margin-top: 16px;
+    width: 100%;
+    border-radius: $defaultRadius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 46px;
+    background-color: $primaryColor;
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: $fontColor;
+    border: none;
+  }
+  &__buttonsvg{
+    width: 20px;
+    height: 20px;
+    fill: $fontColor;
+  }
+
+
+  @media screen and (min-width:834px){
+    height: 480px;
+    &__shell{
+      height: 360px;
+      width: calc(100vw - 142px);
+      background-color: $bgSecondary;
+      padding: 0 30px;
+      border-radius: 20px;
+      .join-section__holder {
+        flex-direction: row;
+        align-items: center;
+        .join-section__image {
+          height: 280px;
+          max-width: 400px;
+          background: url("../images/tablet/spaceTablet.jpg") center / 100% 100% no-repeat;
+          border-radius: 22px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (min-width:1280px) {
+  height: 550px;
+    &__shell{
+      height: 430px;
+      padding: 0 60px;
+      width: calc(100vw - 230px);
+      display: flex;
+      align-items: center;
+      .join-section__holder {
+        gap: 80px;
+        .join-section__image {
+          height: 310px;
+          width: 425px;
+          background: url("../images/desktop/space.jpg") center / 100% 100% no-repeat;
+        }
+        .join-section__info {
+          &--title {
+            font-size: 38px;
+            line-height: 120%;
+          }
+          &--text {
+            font-size: 22px;
+            line-height: 160%;
+          }
+          .join-section__input-poz {
+            width: 100%;
+            position: relative;
+            display: inline-flex;
+            input{
+              width: 420px;
+              padding: 19px 20px;
+              height: 60px;
+            }
+          }
+          .join-section__button{
+            margin: 0px;
+            width: 179px;
+            height: 60px;
+            padding: 19px 50px 19px 50px;
+            position: absolute;
+            right: 0;
+
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -9,6 +9,22 @@
    border: 1px solid $fontSubColor;
 }
 
+//join
+
+%joinp{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 140%;
+   color: $footercolor;
+}
+
+%jointitle{
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 140%;
+   text-transform: capitalize;
+   color:$fontColor;
+}
 //footer
 %footerp{
    font-family: 'Work Sans',sans-serif;
