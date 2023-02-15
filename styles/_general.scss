@@ -2,7 +2,30 @@
    box-sizing: border-box;
 }
 
+footer{
+   background-color: #3B3B3B;
+}
+
 .main-section{
+   max-width: 500px;
+   width: 100%;
+   margin: 0px auto;
+   padding: 0px 30px;
+   @media screen and (min-width:834px){
+      max-width: 1200px;
+      width: 100%;
+      margin: 0px auto;
+      padding: 0px 72px;
+   }
+   @media screen and (min-width:1280px){
+      max-width: 1920px;
+      width: 100%;
+      margin: 0px auto;
+      padding: 0px 115px;
+   }
+}
+
+.footer-section{
    max-width: 500px;
    width: 100%;
    margin: 0px auto;
