@@ -8,3 +8,23 @@
 %emailborder{
    border: 1px solid $fontSubColor;
 }
+
+//footer
+%footerp{
+   font-family: 'Work Sans',sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 140%;
+   color: $footercolor;
+}
+
+%footertitle{
+   font-family: 'SpaceMonoBold',sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 160%;
+   text-transform: capitalize;
+   color:$fontColor;
+}
