@@ -1,0 +1,109 @@
+@use "variables";
+
+
+.footer-section{
+   &__logo{
+      display: flex;
+      align-items: center;
+   }
+   &__imglogo{
+      fill: $primaryColor;
+   }
+   
+   &__social{
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p{
+         @extend %footerp;
+      }
+   }
+   &__list{
+      display: flex;
+      gap: 12px;
+   }
+   &__item{
+      width: 32px;
+      height: 32px;
+   }
+   &__sociallogo{
+      width: 100%;
+      height: 100%;
+      fill: $fontSubColor;
+   }
+   &__explore{
+      margin-top: 35px;
+      h3{
+         @extend %footertitle;
+      }
+   }
+   &__explore--menu{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+   &__explore--list{
+      @extend %footerp;
+   }
+   &__join{
+      margin-top: 30px;
+      h3{
+         @extend %footertitle;
+      }
+      p{
+         margin-top: 20px;
+         @extend %footerp;
+      }
+      form{
+         margin-top: 20px;
+      }
+   }
+   &__input{
+      input{
+         width: 100%;
+         border-radius: $defaultRadius;
+         padding: 12px 20px;
+         @extend %emailborder;
+      }
+   }
+   &__button{
+      margin-top: 16px;
+      width: 100%;
+      border-radius: $defaultRadius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      height: 46px;
+      background-color: $primaryColor;
+      font-family: 'Work Sans',sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      color: $fontColor;
+      border: none;
+   }
+   &__buttonsvg{
+         width: 20px;
+         height: 20px;
+         fill: $fontColor;
+   }
+   
+   &__description{
+      margin-top: 30px;
+      border-top: 1px solid #858584;
+      p{
+         padding-top: 20px;
+         padding-bottom: 40px;
+         font-family: 'Work Sans',sans-serif;
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 110%;
+         color: $footercolor;
+      }
+   }
+}
