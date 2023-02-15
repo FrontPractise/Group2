@@ -106,4 +106,28 @@
          color: $footercolor;
       }
    }
+   @media screen and (min-width:834px){
+      
+      &__buttonsvg{
+         display: none;
+      }
+      &__input{
+         position: relative;
+         display: inline-flex;
+         input{
+            width: 420px;
+            padding: 19px 20px;
+            height: 60px;
+         }
+      }
+      &__button{
+         margin: 0px;
+         width: 179px;
+         height: 60px;
+         padding: 19px 50px 19px 50px;
+         position: absolute;
+         right: 0;
+      }
+      
+   }
 }
