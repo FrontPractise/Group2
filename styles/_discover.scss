@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.discover-section{
+    min-width: 375px;
+    background: #2B2B2B;
+}
+
+.discover-section__nft{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.discover-section__wrapper{
+    width: 315px;
+    height: 71px;
+    margin:0px 30px;
+    h4{
+        font-family:'Work Sans';
+        font-size: 28px;
+        font-weight: 600;
+        color:#fff;
+        line-height: 140%;
+        background: #2B2B2B;
+    }
+    p{
+        font-family:'Work Sans';
+        font-size: 16px;
+        font-weight: 400;
+        color:#fff;
+        line-height: 140%;
+        background: #2B2B2B;
+    }
+}
+
+.discover-section__nftOne{
+    border-radius: 20px;
+    background: #3B3B3B;
+    width: 315px;
+    margin:40px 30px 20px 30px;
+    @media screen and (min-width:834px){
+        margin:40px 72px 80px 72px;
+    }
+    @media screen and (min-width:1280px){
+        margin:60px 30px 80px 115px;
+    }
+    .discover-section__nftOneImg{
+        img{
+            width: 315px;
+            height: 238px;
+            border-radius: 20px;
+        }
+    } 
+    .discover-section__nftOnecaption{
+            color:#fff;
+            font-family: 'Work Sans';
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 31px;
+            margin:auto 20px;
+    }
+    
+}
+
+.discover-section__nftOneName{
+    width: 275px;
+    height: 24px;
+    margin: 5px 20px 5px 25px;              
+    img{
+        width: 24px;
+        height: 24px;
+        border-radius: 120px;
+        
+    }
+    span{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#fff;
+    }
+}
+
+.discover-section__nftOnePrice{
+    height: 34px;
+    width: 275px;
+    display: flex;
+    justify-content:space-between;
+    color:#858584;
+    margin:25px 20px 25px 20px;
+    font-family: 'Space Mono';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+
+    .p2{
+        color:#fff;
+        padding-top:8px;
+    }
+}
+
+.discover-section__nftOneInfo{
+    height: 164px;
+    width: 315px;
+}
+
+.discover-section__nftTwo{
+    border-radius: 20px;
+    background: #3B3B3B;
+    width: 315px;
+    margin:40px 30px 20px 30px;
+    @media screen and (min-width:751px){
+        display: none;
+    }
+    @media screen and (min-width:1280px){
+        margin:60px 0px 80px 0px;
+        display: block;
+    }
+    .discover-section__nftTwoImg{
+        img{
+            width: 315px;
+            height: 238px;
+            border-radius: 20px;
+        }
+    } 
+    .discover-section__nftTwocaption{
+            color:#fff;
+            font-family: 'Work Sans';
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 31px;
+            margin:auto 20px;
+    }
+    
+}
+
+.discover-section__nftTwoName{
+    width: 275px;
+    height: 24px;
+    margin: 5px 20px 5px 25px;              
+    img{
+        width: 24px;
+        height: 24px;
+        border-radius: 120px;
+        
+    }
+    span{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#fff;
+    }
+}
+
+.discover-section__nftTwoPrice{
+    height: 34px;
+    width: 275px;
+    display: flex;
+    justify-content:space-between;
+    color:#858584;
+    margin:25px 20px 25px 20px;
+    font-family: 'Space Mono';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+
+    .p2{
+        color:#fff;
+        padding-top:8px;
+    }
+}
+
+.discover-section__nftTwoInfo{
+    height: 164px;
+    width: 315px;
+    }
+
+
+
+.discover-section__nftThree{
+    border-radius: 20px;
+    background: #3B3B3B;
+    width: 315px;
+    margin:40px 30px 20px 30px;
+    @media screen and (min-width:834px){
+        margin:40px 72px 80px 30px;
+    }
+    @media screen and (min-width:1280px){
+        margin:60px 115px 80px 30px;
+    }
+    .discover-section__nftThreeImg{
+        img{
+            width: 315px;
+            height: 238px;
+            border-radius: 20px;
+        }
+    } 
+    .discover-section__nftThreecaption{
+            color:#fff;
+            font-family: 'Work Sans';
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 31px;
+            margin:auto 20px;
+    }
+    
+}
+
+.discover-section__nftThreeName{
+    width: 275px;
+    height: 24px;
+    margin: 5px 20px 5px 25px;              
+    img{
+        width: 24px;
+        height: 24px;
+        border-radius: 120px;
+        
+    }
+    span{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#fff;
+    }
+}
+
+.discover-section__nftThreePrice{
+    height: 34px;
+    width: 275px;
+    display: flex;
+    justify-content:space-between;
+    color:#858584;
+    margin:25px 20px 25px 20px;
+    font-family: 'Space Mono';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+
+    .p2{
+        color:#fff;
+        padding-top:8px;
+    }
+}
+
+.discover-section__nftThreeInfo{
+    height: 164px;
+    width: 315px;
+    
+
+}
