@@ -1,0 +1,108 @@
+@use "variables";
+.section {
+    &__title {
+        font: 600 28px / 1.4 variables.$fontMainTitle;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        color: variables.$fontColor;
+        @media screen and (min-width:834px) {
+            font: 600 28px / 1.4 variables.$fontMainTitle;
+        }
+        @media screen and (min-width:1280px) {
+            font: 600 38px / 1.2 variables.$fontMainTitle;
+        }
+    }
+    &__text {
+        font: 400 16px / 1.37 variables.$fontMain;
+        color: variables.$fontColor;
+        margin-bottom: 40px;
+        @media screen and (min-width:834px) {
+            font: 600 28px / 1.4 variables.$fontMain;
+            font: 400 28px / 1.4 variables.$fontMain;
+        }
+        @media screen and (min-width:1280px) {
+            font: 400 22px / 1.72 variables.$fontMain;
+            text-transform: capitalize;
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @media screen and (min-width:834px) {
+        flex-direction: row;
+    }
+    @media screen and (min-width:1280px) {
+        flex-direction: row;
+    }
+}
+.how-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: $bgSecondary;
+    border-radius: $defaultRadius;
+    @media screen and (min-width:834px) {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 337px;
+        height: 100%;
+        padding: 0px 20px 30px;
+    }
+    @media screen and (min-width:1280px) {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 439px;
+        height: 100%;
+        padding: 0px 30px 30px;
+    }
+    &__title {
+        font: 600 16px / 1.4 variables.$fontMainTitle;
+        color: variables.$fontColor;
+        margin-bottom: 10px;
+        @media screen and (min-width:834px) {
+            font: 600 16px / 1.4 variables.$fontMainTitle;
+        }
+        @media screen and (min-width:1280px) {
+            font: 600 22px / 1.4 variables.$fontMainTitle;
+            text-transform: capitalize;
+        }
+    }
+    &__text {
+        font: 400 12px / 1.4 variables.$fontMain;
+        color: variables.$fontColor;
+
+        @media screen and (min-width:834px) {
+            font: 400 12px / 1.4 variables.$fontMain
+        }
+
+        @media screen and (min-width:1280px) {
+            font: 400 16px / 1.4 variables.$fontMain;
+        }
+    }
+    &__image {
+        height: 100px;
+        width: 100px;
+        @media screen and (min-width:834px) {
+            width: 160px;
+            height: 160px;
+        }
+        @media screen and (min-width:1280px) {
+            width: 250px;
+            height: 250px;
+        }
+        >img {
+            height: 100%;
+            object-fit: cover;
+        }
+}
+
+}
