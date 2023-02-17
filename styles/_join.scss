@@ -1,4 +1,5 @@
 @use "variables";
+
 .join-section{
   display: flex;
   justify-content: center;
@@ -61,7 +62,6 @@
     fill: $fontColor;
   }
 
-
   @media screen and (min-width:834px){
     &__shell{
       max-width: 1050px;
@@ -118,7 +118,7 @@
             }
           }
           .join-section__button{
-            margin: 0px;
+            margin: 0;
             width: 179px;
             height: 60px;
             padding: 19px 50px 19px 50px;
