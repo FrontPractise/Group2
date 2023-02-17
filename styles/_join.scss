@@ -3,15 +3,17 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  padding: 40px;
   &__holder {
     display: flex;
     flex-direction: column;
-    padding: 40px 0;
-    gap: 30px;
+    align-items: center;
     .join-section__image {
-      height: 255px;
-      background: url("../images/mobile/spaceMobile.jpg") center / 100% 100% no-repeat;
-      border-radius: 22px;
+      img{
+        border-radius: 22px;
+        margin-bottom: 30px;
+      }
     }
     .join-section__info{
       &--title {
@@ -61,22 +63,20 @@
 
 
   @media screen and (min-width:834px){
-    height: 480px;
     &__shell{
-      height: 360px;
-      width: calc(100vw - 142px);
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
       background-color: $bgSecondary;
       padding: 0 30px;
       border-radius: 20px;
       .join-section__holder {
         flex-direction: row;
         align-items: center;
+        display: flex;
+        gap: 30px;
         .join-section__image {
-          height: 280px;
-          max-width: 400px;
-          background: url("../images/tablet/spaceTablet.jpg") center / 100% 100% no-repeat;
-          border-radius: 22px;
-          width: 100%;
+          padding: 40px 0 0;
         }
       }
     }
@@ -84,19 +84,18 @@
   @media screen and (min-width:1280px) {
   height: 550px;
     &__shell{
-      height: 430px;
-      padding: 0 60px;
-      width: calc(100vw - 230px);
+      padding: 60px;
       display: flex;
       align-items: center;
       .join-section__holder {
-        gap: 80px;
         .join-section__image {
-          height: 310px;
-          width: 425px;
-          background: url("../images/desktop/space.jpg") center / 100% 100% no-repeat;
+          padding: 0;
+          img {
+            margin: 0;
+          }
         }
         .join-section__info {
+          max-width: 47%;
           &--title {
             font-size: 38px;
             line-height: 120%;
