@@ -962,7 +962,7 @@ footer {
     height: 60px;
   }
   .join-section__shell .join-section__holder .join-section__info .join-section__button {
-    margin: 0px;
+    margin: 0;
     width: 179px;
     height: 60px;
     padding: 19px 50px 19px 50px;
